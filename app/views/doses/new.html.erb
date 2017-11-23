@@ -1,0 +1,6 @@
+<h1>What is your secret ? </h1>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :ingredient, collection: Ingredient.all %>
+  <%= f.input :description %>
+  <%= f.submit "add into this cocktail", class:"btn btn-primary" %>
+<% end %>

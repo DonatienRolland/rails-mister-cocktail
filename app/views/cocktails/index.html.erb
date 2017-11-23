@@ -1,0 +1,11 @@
+
+<h1> Hello my best barman !</h1>
+<div class="container">
+  <% @cocktails.each do | cocktail | %>
+    <div class="card">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "Add a new cocktail ?", new_cocktail_path %>
